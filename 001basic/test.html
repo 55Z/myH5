@@ -18,9 +18,18 @@
         from{opacity:0}
         to{opacity:100}
     }
-    h1,p{
+       @keyframes mysecond{
+       0%{opacity:0}
+        50%{opacity:100}
+           100%{opacity:0}
+    }
+    h1{
         animation: myfirst 2s infinite;
     }
+      p{
+          animation:mysecond 2s infinite;
+          animation-timing-function:linear;
+      }
   </style>
 </head>
 <body style="text-align:center;">
